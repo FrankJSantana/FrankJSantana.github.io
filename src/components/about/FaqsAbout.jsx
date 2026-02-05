@@ -38,19 +38,19 @@ const SkillsList = () => {
 
   const skills = {
     "¿Qué tecnologías uso?": [
-      "Actualmente trabajo con tecnologías como React, Next.js, Vue.js, Astro, tailwind, Boostrap y demas librerias y frameworks para el frontend y en el backend trabajo con Node.js, Express, MongoDB, Firebase, entre otras.",
+      "Mi especialidad es el Backend con Java SE/EE y Spring Boot para la creación de microservicios robustos y lógica de negocio compleja. También cuento con conocimientos sólidos en Frontend (React, Angular) que me permiten tener una visión integral Full Stack. Gestiono bases de datos relacionales (MySQL/MariaDB) con Hibernate/JPA y utilizo Python para automatización. Además, tengo experiencia en soluciones Low-Code con Appian.",
     ],
     "Mi Experiencia": [
-      "Tengo experiencia trabajando en startups y consultoras tecnológicas, desarrollando y maquetando sitios web a partir de diseños en Figma. Para ello, utilizo tecnologías frontend como Astro y React, junto con Tailwind CSS y otras librerías y frameworks para el estilizado y la optimización de interfaces.",
+      "Tengo experiencia profesional en Indra como Software Developer, donde he desarrollado soluciones de transformación digital y optimización de procesos críticos de inventario utilizando Appian (Low-Code) y Java. Además, he liderado el desarrollo integral (Full Stack) de proyectos como 'TipTrack', una aplicación móvil con arquitectura robusta en Node.js, Express y bases de datos PostgreSQL, demostrando mi capacidad para crear software escalable y de alto rendimiento.",
     ],
     "Mi formacion": [
-      "Estudié una tecnicatura en automatización de grado universitaria en el ITU, lo que me brindó las bases en programación. Posteriormente, decidí enfocarme en el desarrollo web y de software. Ademas, realicé diversos cursos, diplomados y capacitaciones en grandes universidades Argentinas, como la UTN, tambien, complemento mi formación con el aprendizaje autodidacta, lo que me permite mantenerme actualizado con los avances tecnológicos en el desarrollo de software.",
+      "Soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM), una formación de 2000 horas especializada en Java y arquitectura de software. Cuento con una base en ingeniería (Tecnologías Ambientales) y una tecnicatura en automatización (ITU). Me mantengo en constante formación (OpenWebinars, UTN) y aprendizaje autodidacta, obteniendo certificaciones en tecnologías como Angular y Seguridad Informática.",
     ],
     "¿Cómo trabajo en equipo?": [
-      "Tengo experiencia trabajando en equipos multidisciplinarios, donde me he encargado del desarrollo frontend de aplicaciones web. Para ello, utilizo metodologías ágiles como Scrum y Kanban, además de herramientas de control de versiones como Git y GitHub para gestionar el flujo de trabajo. También cuento con experiencia en el uso de herramientas de gestión de proyectos como Trello y Jira, facilitando la organización y colaboración dentro del equipo.",
+      "Trabajo eficazmente en equipos multidisciplinarios bajo metodologías ágiles (Scrum), participando activamente en 'dailies' y planificación de sprints. Utilizo herramientas como Jira para la gestión de tareas y Git/GitHub para el control de versiones y revisión de código (Pull Requests). Mi enfoque colaborativo facilita la integración entre el backend y el frontend, asegurando la calidad y entrega continua del software.",
     ],
-    "Metodolgias Agiles": [
-      "He trabajado con metodologías ágiles como Scrum y Kanban. En Scrum, participé en sprints de dos semanas, donde al finalizar cada sprint realizaba un pull request (PR) con mi trabajo, el cual pasaba por una fase de revisión y corrección antes de ser fusionado y enviado a producción. También he trabajado con Kanban, utilizando tableros para gestionar tareas y moverlas según su estado de progreso. Además, participé en reuniones diarias (dailies) para planificar y reportar avances del proyecto, asegurando una comunicación eficiente dentro del equipo.",
+    "Metodologías Agiles": [
+      "Aplico metodologías como Scrum y Kanban en mi flujo de trabajo diario. En Scrum, trabajo en sprints de dos semanas con entregas continuas, realizando Code Reviews y Pull Requests rigurosos para asegurar la calidad del código antes de desplegar a producción. Utilizo tableros Kanban para visualizar el progreso y priorizar tareas, garantizando una comunicación fluida y transparente con el equipo.",
     ],
   };
 
@@ -84,9 +84,8 @@ const SkillsList = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className={`h-6 w-6 shrink-0 transform text-[#6a2cbb] transition-transform ${
-                        openItem === category ? "rotate-180" : ""
-                      }`}
+                      className={`h-6 w-6 shrink-0 transform text-[#6a2cbb] transition-transform ${openItem === category ? "rotate-180" : ""
+                        }`}
                     >
                       <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
                     </svg>
@@ -94,11 +93,10 @@ const SkillsList = () => {
                 </div>
 
                 <div
-                  className={`px-4 transition-all duration-300 ${
-                    openItem === category
-                      ? "max-h-[500px] pb-4 opacity-100"
-                      : "max-h-0 opacity-0"
-                  }`}
+                  className={`px-4 transition-all duration-300 ${openItem === category
+                    ? "max-h-[500px] pb-4 opacity-100"
+                    : "max-h-0 opacity-0"
+                    }`}
                 >
                   <p className="text-[0.8em] text-white">{skills[category]}</p>
                 </div>

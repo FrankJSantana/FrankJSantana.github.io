@@ -1,34 +1,24 @@
 export const jobs = [
   {
-    title: "Frontend Developer - Neowyze",
-    time: ["12/2024 - 05/2025"],
-    description:
-      "Mis tareas en Neowyze consisten en desarrollar webs responsivas basadas en diseños proporcionados en Figma, utilizando Astro, React, Tailwind y otras librerías frontend.",
+    title: "Software Developer - Indra",
+    time: ["2025 - 2026"],
+    description: "Desarrollador de software especializado en la optimización de procesos críticos de inventario y mantenimiento.",
     list: [
-      "Para el flujo de trabajo, utilizo Jira como herramienta de gestión y Git/GitHub como sistema de control de versiones.",
-      "Trabajo bajo la metodología ágil Scrum, con sprints de 2 semanas y dos reuniones diarias (dailies) para planificar el proyecto y presentar avances",
+      "Desarrollo de microservicios robustos y lógica de negocio compleja con Java SE/EE y Spring Boot.",
+      "Implementación de soluciones Low-Code con Appian para agilizar flujos de trabajo empresariales.",
+      "Gestión avanzada de bases de datos relacionales (MySQL/MariaDB) usando Hibernate/JPA.",
+      "Automatización de tareas y scripting con Python.",
     ],
   },
+
   {
-    title: "Frontend Developer - Vegna",
-    time: ["05/2024 - 02/2024"],
-    description: "Desarrollo y mantenimiento de interfaces de usuario con:",
-    list: ["JavaScript - TypeScript", "React - Next.js", "Tailwind", "Shadcn"],
-  },
-  {
-    title: "Frontend Developer - Igrowker",
-    time: ["07/2022 - 08/2022"],
-    description: "Desarrollo y mantenimiento de interfaces de usuario con",
-    list: ["React - React Router - Context api - CSS - Material UI"],
-  },
-  {
-    title: " Web Developer - NoCountry",
-    time: ["03/2022 - 06/2022"],
-    description:
-      "Desarrollo de aplicaciones web responsivas MVP fullstack usando para su desarrollo tecnologías como",
+    title: "Técnico Superior en DAM",
+    time: ["2023 - 2025"],
+    description: "Formación especializada en Desarrollo de Aplicaciones Multiplataforma (2000h).",
     list: [
-      "Frontend : React - React Router - Context api - tailwindcss",
-      "Backend : API REST con Express.js, MongoDB",
+      "Fundamentos sólidos en programación orientada a objetos (Java).",
+      "Desarrollo de aplicaciones móviles y sistemas de gestión empresarial.",
+      "Bases de datos relacionales y diseño de software.",
     ],
   },
 ];
