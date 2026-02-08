@@ -1,7 +1,6 @@
 import {
   FaLinkedinIn,
   FaGithub,
-  FaInstagram,
 } from "react-icons/fa6";
 
 const SocialIcons = () => {
@@ -29,15 +28,7 @@ const SocialIcons = () => {
 
 
 
-      <a
-        href="https://www.instagram.com/lautarodevelops/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mx-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
-        aria-label="Instagram"
-      >
-        <FaInstagram className="h-7 w-7" />
-      </a>
+
     </div>
   );
 };
