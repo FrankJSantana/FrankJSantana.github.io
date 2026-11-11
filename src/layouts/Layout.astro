@@ -2,16 +2,34 @@
 import "../styles/global.css";
 import Navbar from "../components/commons/navbar/navbar.astro";
 import Footer from "../components/commons/footer/footer.astro";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = "Portfolio de Franklin Jiménez Santana: Data Engineer junior con GenAI y desarrollador de software (Python, SQL, Apache Spark, AWS, Java y Spring Boot).",
+  noindex = false,
+} = Astro.props;
+
+const pageTitle = title
+  ? `${title} | Franklin Jiménez Santana`
+  : "Franklin Jiménez Santana | Data Engineer con GenAI";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Franklin Jiménez Santana</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <title>{pageTitle}</title>
   </head>
   <body class="bg-gray-950 text-white">
     <Navbar />

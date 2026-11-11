@@ -1,6 +1,6 @@
 ---
 import ServiceCard from "./ServiceCard.astro";
-import { FaLaptopCode, FaBolt, FaRocket } from "react-icons/fa"; 
+import { FaLaptopCode, FaDatabase, FaServer } from "react-icons/fa";
 ---
 
 <section class="site-container mt-14 mx-auto max-w-6xl px-4">
@@ -13,20 +13,19 @@ import { FaLaptopCode, FaBolt, FaRocket } from "react-icons/fa";
 
 	<div class="mt-10 grid gap-6 md:grid-cols-3">
 		<ServiceCard
-			icon={FaLaptopCode}
-			title="Desarrollo Web Responsivo"
-			description="Construcción de sitios web modernos, adaptados a dispositivos móviles, optimizados y con tecnologías actuales."
+			icon={FaDatabase}
+			title="Ingeniería de Datos"
+			description="Diseño de pipelines ETL con Python, SQL y Apache Spark, orquestación con Airflow y despliegue en la nube con AWS."
 		/>
 		<ServiceCard
-			icon={FaBolt}
-			title="Frontend"
-			description="Desarrollo de interfaces modernas, rápidas y accesibles que ofrecen una experiencia de usuario intuitiva y atractiva."
-		/>
-
-		<ServiceCard
-			icon={FaRocket}
+			icon={FaServer}
 			title="Backend"
-			description="Rendimiento rápido, mejores prácticas de accesibilidad y optimización de procesos en el servidor."
+			description="APIs REST y microservicios con Java y Spring Boot, bases de datos relacionales y buenas prácticas de calidad y testing."
+		/>
+		<ServiceCard
+			icon={FaLaptopCode}
+			title="Desarrollo Web y Móvil"
+			description="Aplicaciones web responsivas y apps móviles Full Stack con React, React Native y Node.js."
 		/>
 	</div>
 </section>

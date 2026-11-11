@@ -3,7 +3,7 @@
     <h2
       class="text-4xl font-bold flex flex-col items-center gap-6 text-center whitespace-nowrap text-white md:flex-row md:items-center md:text-start"
     >
-      <span class="drop-shadow-[2px_2px_0_#7836cf]">Tecnologias</span>
+      <span class="drop-shadow-[2px_2px_0_#7836cf]">Tecnologías</span>
       <span
         class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"
       ></span>
@@ -12,25 +12,29 @@
   <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
     {
       [
+        { name: "Python", icon: "python" },
+        { name: "Apache Spark", icon: "apachespark" },
+        { name: "Airflow", icon: "apacheairflow" },
+        { name: "AWS", icon: "amazonwebservices" },
+        { name: "PostgreSQL", icon: "postgresql" },
+        { name: "MySQL", icon: "mysql" },
+        { name: "MongoDB", icon: "mongodb" },
+        { name: "Redis", icon: "redis" },
+        { name: "Docker", icon: "docker" },
+        { name: "Bash", icon: "bash" },
+        { name: "Git", icon: "git" },
+        { name: "GitLab", icon: "gitlab" },
         { name: "Java", icon: "java" },
         { name: "Spring Boot", icon: "spring" },
         { name: "Hibernate", icon: "hibernate" },
+        { name: "JUnit", icon: "junit" },
         { name: "Node.js", icon: "nodejs" },
-        { name: "Python", icon: "python" },
         { name: "React", icon: "react" },
         { name: "Angular", icon: "angularjs" },
         { name: "Astro", icon: "astro" },
         { name: "Tailwind", icon: "tailwindcss" },
-        { name: "MySQL", icon: "mysql" },
-        { name: "MongoDB", icon: "mongodb" },
-        { name: "PostgreSQL", icon: "postgresql" },
-        { name: "Docker", icon: "docker" },
-        { name: "AWS", icon: "amazonwebservices" },
         { name: "Azure", icon: "azure" },
         { name: "Kafka", icon: "apachekafka" },
-        { name: "Git", icon: "git" },
-        { name: "GitLab", icon: "gitlab" },
-        { name: "JUnit", icon: "junit" },
         { name: "Cucumber", icon: "cucumber" },
       ].map((skill) => (
         <div class="relative group">

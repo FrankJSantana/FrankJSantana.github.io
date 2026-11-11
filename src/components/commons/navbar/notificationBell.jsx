@@ -10,17 +10,11 @@ export default function NotificationBell() {
   const baseNotifications = [
     { id: 1, text: "Nuevo proyecto publicado 🚀", read: false },
     {
-      id: 2,
-      text: "Hey como va?, te comento que actualmente estoy aprendiendo desarrollo móvil con React Native",
+      id: 3,
+      text: "Hey como va?, te comento que actualmente me estoy formando como Data Engineer con GenAI (Python, SQL, Spark y AWS) en el Programa Dual de Fundación Accenture y FUE",
       read: false,
     },
   ];
-
-  // Obtener el id
-  const lastBaseId =
-    baseNotifications.length > 0
-      ? baseNotifications[baseNotifications.length - 1].id
-      : null;
 
   // Obtener el id del último elemento no leído
   const lastUnreadId =
@@ -36,7 +30,10 @@ export default function NotificationBell() {
     if (saved) {
       const savedArray = JSON.parse(saved);
       const savedMap = new Map(savedArray.map((n) => [n.id, n]));
-      merged = baseNotifications.map((n) => savedMap.get(n.id) || n);
+      merged = baseNotifications.map((n) => ({
+        ...n,
+        read: savedMap.get(n.id)?.read ?? n.read,
+      }));
     }
     setNotifications(merged);
   }, []);
@@ -80,9 +77,9 @@ export default function NotificationBell() {
         className="relative rounded-full p-2 hover:bg-gray-700"
       >
         <FaBell className="text-2xl text-white cursor-pointer" />
-        {unreadCount > 0 && lastBaseId && (
+        {unreadCount > 0 && (
           <span className="absolute top-0 right-0 inline-flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs text-white">
-            {lastBaseId}
+            {unreadCount}
           </span>
         )}
       </button>

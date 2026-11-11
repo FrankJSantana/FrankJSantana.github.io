@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { faqs as skills } from "../../../data/faqsData.js";
 
 const CategoryIcons = {
   "Web Development": (
@@ -35,24 +36,6 @@ const CategoryIcons = {
 
 const SkillsList = () => {
   const [openItem, setOpenItem] = useState(null);
-
-  const skills = {
-    "¿Qué tecnologías uso?": [
-      "Mi especialidad es el Backend con Java SE/EE y Spring Boot para la creación de microservicios robustos y lógica de negocio compleja. También cuento con conocimientos sólidos en Frontend (React, Angular) que me permiten tener una visión integral Full Stack. Gestiono bases de datos relacionales (MySQL/MariaDB) con Hibernate/JPA y utilizo Python para automatización. Además, tengo experiencia en soluciones Low-Code con Appian.",
-    ],
-    "Mi Experiencia": [
-      "Tengo experiencia profesional en Indra como Software Developer, donde he desarrollado soluciones de transformación digital y optimización de procesos críticos de inventario utilizando Appian (Low-Code) y Java. Además, he liderado el desarrollo integral (Full Stack) de proyectos como 'TipTrack', una aplicación móvil con arquitectura robusta en Node.js, Express y bases de datos PostgreSQL, demostrando mi capacidad para crear software escalable y de alto rendimiento.",
-    ],
-    "Mi formacion": [
-      "Soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM), una formación de 2000 horas especializada en Java y arquitectura de software. Cuento con una base en ingeniería (Tecnologías Ambientales) y una tecnicatura en automatización (ITU). Me mantengo en constante formación (OpenWebinars, UTN) y aprendizaje autodidacta, obteniendo certificaciones en tecnologías como Angular y Seguridad Informática.",
-    ],
-    "¿Cómo trabajo en equipo?": [
-      "Trabajo eficazmente en equipos multidisciplinarios bajo metodologías ágiles (Scrum), participando activamente en 'dailies' y planificación de sprints. Utilizo herramientas como Jira para la gestión de tareas y Git/GitHub para el control de versiones y revisión de código (Pull Requests). Mi enfoque colaborativo facilita la integración entre el backend y el frontend, asegurando la calidad y entrega continua del software.",
-    ],
-    "Metodologías Agiles": [
-      "Aplico metodologías como Scrum y Kanban en mi flujo de trabajo diario. En Scrum, trabajo en sprints de dos semanas con entregas continuas, realizando Code Reviews y Pull Requests rigurosos para asegurar la calidad del código antes de desplegar a producción. Utilizo tableros Kanban para visualizar el progreso y priorizar tareas, garantizando una comunicación fluida y transparente con el equipo.",
-    ],
-  };
 
   const toggleItem = (item) => {
     setOpenItem(openItem === item ? null : item);

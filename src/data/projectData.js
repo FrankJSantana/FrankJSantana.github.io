@@ -16,9 +16,9 @@ export const proyectos = [
   {
     titulo: "TipTrack - Gestión de Propinas",
     descripcion:
-      "App móvil multiplataforma (Full Stack) para digitalizar el flujo de propinas en hostelería. Automatiza recaudación, auditoría y reparto justo. Stack: React Native, Expo, Node.js, Postgres (Neon), Redis, Clerk.",
+      "App móvil multiplataforma (Full Stack) para digitalizar el flujo de propinas en hostelería. Automatiza la recaudación, la auditoría y el reparto ponderado por horas trabajadas, con informes PDF. Stack: React Native (Expo SDK 54), Node.js/Express, PostgreSQL (Neon), Redis (Upstash) y Clerk.",
     imagen: TipTrack.src,
-    tecnologias: ["React Native", "Node.js", "PostgreSQL", "Redis"],
+    tecnologias: ["React Native", "Expo", "Node.js", "PostgreSQL", "Redis"],
     demo: "",
     codigo: "https://github.com/FrankJSantana/TipTrack-React-Native-Expo",
     categoria: "fullstack",

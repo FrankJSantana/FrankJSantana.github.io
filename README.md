@@ -1,6 +1,6 @@
 # 🌌 Portafolio Personal - Franklin Jiménez Santana
 
-Este repositorio contiene el código fuente de mi portafolio personal, diseñado con un enfoque minimalista y moderno para mostrar mis habilidades y proyectos como **Desarrollador Full Stack**.
+Este repositorio contiene el código fuente de mi portafolio personal, diseñado con un enfoque minimalista y moderno para mostrar mi perfil como **Data Engineer junior con GenAI** y **desarrollador de software** (Python, SQL, Apache Spark, AWS, Java y Spring Boot), junto a mis proyectos Full Stack.
 
 ---
 
@@ -9,7 +9,8 @@ Este repositorio contiene el código fuente de mi portafolio personal, diseñado
 - ⚡️ Desarrollado con **Astro** y **React** para máximo rendimiento.
 - 🎨 **Diseño Responsive** y estilizado con **Tailwind CSS**.
 - 🧠 **Filtrado dinámico** de proyectos por categoría.
-- � Secciones clave: *Sobre mí*, *Proyectos*, *Contacto*.
+- 🗂️ Secciones clave: *Inicio*, *Proyectos*, *Sobre mí* (experiencia, formación y tecnologías) y *Contacto*.
+- 🚢 Despliegue automático en **GitHub Pages** con GitHub Actions.
 
 ---
 
@@ -27,15 +28,20 @@ Este repositorio contiene el código fuente de mi portafolio personal, diseñado
 
 ```text
 /
-├── public/
-│   └── images/       # Recursos estáticos y media
+├── public/           # Recursos estáticos (iconos SVG, favicon)
 ├── src/
+│   ├── assets/       # Imágenes (foto de perfil, capturas de proyectos)
 │   ├── components/   # Componentes reutilizables (Astro/React)
-│   ├── layouts/      # Layout base y metadatos
-│   ├── pages/        # Rutas de la aplicación (Inicio, Proyectos, Contacto)
-│   └── data/         # Archivos de datos (projectsData.js, etc.)
+│   ├── data/         # Contenido: jobsData.js, projectData.js, faqsData.js
+│   ├── layouts/      # Layout base y metadatos (título, descripción, robots)
+│   ├── pages/        # Rutas (Inicio, Proyectos, Sobre mí, Contacto, 404)
+│   ├── scripts/      # Lógica del cliente (pestañas de experiencia, filtro)
+│   └── styles/       # Estilos globales
 └── astro.config.mjs
 ```
+
+> Para actualizar el contenido basta con editar los archivos de `src/data/`
+> (experiencia, proyectos y textos de los desplegables).
 
 ## 🧞 Comandos
 
