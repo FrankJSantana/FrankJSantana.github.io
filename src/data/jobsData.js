@@ -16,14 +16,14 @@ export const jobs = [
     title: "Ingeniero de software júnior - Indra",
     time: ["Oct 2025 - Ene 2026"],
     description:
-      "Solución integral para la gestión automatizada de flotas de mantenimiento de bicicletas y estaciones inteligentes con la plataforma Appian.",
+      "Solución integral para la gestión automatizada de flotas de mantenimiento de bicicletas y estaciones inteligentes con Appian, apoyada en un backend Java/Spring Boot.",
     list: [
-      "Modelado de procesos de negocio complejos bajo el estándar BPMN 2.0.",
-      "Desarrollo Low-Code: interfaces de usuario dinámicas y funcionales con el lenguaje SAIL.",
-      "Implementación y optimización de consultas en MySQL y MariaDB para la trazabilidad de activos en tiempo real.",
-      "Digitalización del ciclo de vida del mantenimiento, mejorando la eficiencia operativa en la gestión de estaciones.",
-    ],
-  },
+      "Modelado de procesos de negocio complejos bajo el estándar BPMN 2.0 y desarrollo Low-Code de interfaces dinámicas con SAIL (Appian).",
+      "Desarrollo de microservicios y lógica de negocio con Java SE/EE y Spring Boot.",
+      "Persistencia con Hibernate/JPA sobre MySQL y MariaDB (integridad de datos y trazabilidad de activos en tiempo real) y MongoDB como base NoSQL.",
+      "Contenerización con Docker y automatización de tareas y scripting con Python.",
+      "Digitalización del ciclo de vida del mantenimiento, optimizando el inventario y la eficiencia operativa en la gestión de estaciones.",
+    ],  },
 
   {
     title: "Técnico Superior en DAM",
